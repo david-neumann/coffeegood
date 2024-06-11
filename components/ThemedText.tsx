@@ -1,4 +1,4 @@
-import { Text, type TextProps, StyleSheet } from 'react-native';
+import { Text, type TextProps, StyleSheet, Platform } from 'react-native';
 
 import { useThemeColor } from '@/hooks/useThemeColor';
 
@@ -37,6 +37,9 @@ const styles = StyleSheet.create({
   default: {
     fontSize: 16,
     lineHeight: 24,
+    fontFamily: Platform.select({
+      ios: 'LibreFranklin-Light',
+    })
   },
   defaultSemiBold: {
     fontSize: 16,
@@ -45,8 +48,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontWeight: 'bold',
     lineHeight: 32,
+    fontFamily: Platform.select({
+      ios: 'Fraunces-Black',
+    })
   },
   subtitle: {
     fontSize: 20,

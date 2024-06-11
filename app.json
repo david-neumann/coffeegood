@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.davidneumann.coffeegood"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,10 +28,52 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/eb-garamond/EBGaramond_400Regular.ttf",
+            "node_modules/@expo-google-fonts/eb-garamond/EBGaramond_500Medium.ttf",
+            "node_modules/@expo-google-fonts/eb-garamond/EBGaramond_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/eb-garamond/EBGaramond_700Bold.ttf",
+            "node_modules/@expo-google-fonts/eb-garamond/EBGaramond_800ExtraBold.ttf",
+            "node_modules/@expo-google-fonts/lora/Lora_400Regular.ttf",
+            "node_modules/@expo-google-fonts/lora/Lora_500Medium.ttf",
+            "node_modules/@expo-google-fonts/lora/Lora_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/lora/Lora_700Bold.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_100Thin.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_200ExtraLight.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_300Light.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_400Regular.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_500Medium.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_700Bold.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_800ExtraBold.ttf",
+            "node_modules/@expo-google-fonts/libre-franklin/LibreFranklin_900Black.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_100Thin.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_200ExtraLight.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_300Light.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_400Regular.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_500Medium.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_700Bold.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_800ExtraBold.ttf",
+            "node_modules/@expo-google-fonts/fraunces/Fraunces_900Black.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "25431aae-cbf9-4be0-80aa-ab6e6bd2404e"
+      }
     }
   }
 }
