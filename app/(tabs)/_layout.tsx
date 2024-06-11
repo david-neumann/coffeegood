@@ -1,8 +1,8 @@
 import { Tabs } from "expo-router";
+import { Home, Coffee } from "lucide-react-native";
 import React from "react";
 import { Platform } from "react-native";
 
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 
@@ -16,6 +16,7 @@ export default function TabLayout() {
         headerShown: false,
         tabBarStyle: {
           height: 90,
+          paddingHorizontal: 16,
         },
         tabBarLabelStyle: {
           fontFamily: Platform.select({
@@ -28,11 +29,8 @@ export default function TabLayout() {
         name="home"
         options={{
           title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "home" : "home-outline"}
-              color={color}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Home color={color} size={size} style={{ marginBottom: -8 }} />
           ),
         }}
       />
@@ -40,11 +38,8 @@ export default function TabLayout() {
         name="brews"
         options={{
           title: "Brews",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Coffee color={color} size={size} style={{ marginBottom: -8 }} />
           ),
         }}
       />
@@ -52,11 +47,8 @@ export default function TabLayout() {
         name="beans"
         options={{
           title: "Beans",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Coffee color={color} size={size} style={{ marginBottom: -8 }} />
           ),
         }}
       />
@@ -64,11 +56,8 @@ export default function TabLayout() {
         name="gear"
         options={{
           title: "Gear",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Coffee color={color} size={size} style={{ marginBottom: -8 }} />
           ),
         }}
       />
